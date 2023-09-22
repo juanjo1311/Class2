@@ -40,4 +40,59 @@ h1{
 .word_group:hover{
     background-color: yellow;
     padding: 5px;
+    transition: .3s;
+    color: black;
+}
+
+#title_box{
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    background-color: aqua;
+    /* margin-botton: 10px;*/
+    /* margin: 10px 0 10px 0; */
+    margin: 10px 5px;
+    text-align: right;
+    text-transform: lowercase;
+    word-spacing: 25px;
+    letter-spacing: 10px;
+    /* padding: 20px; */
+    padding: 1 20px 0 0;
+    border: 5px double  #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000fff;
+    -webkit-box-shadow: -10px -9px 13px 11px rgba(168,22,168,1);
+    -moz-box-shadow: -10px -9px 13px 11px rgba(168,22,168,1);
+    box-shadow: -10px -9px 13px 11px rgba(168,22,168,1);
+    font-size: 30px;
+}
+#box_father{
+    background-color: #000;
+    width: 50%;
+    height: 200px;
+    background-image: url(https://media.minutouno.com/p/a9ab265f82623f4d3160067209838db3/adjuntos/150/imagenes/040/316/0040316716/610x0/smart/argentina-mexico.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* aplicando media queris al sitio web */
+@media (min-width:800px) and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+    h1{
+        text-align: right;
+    }
+    a{
+        color: #fff;
+        font-size: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 799px){
+    body{
+        background-image: url(https://media.minutouno.com/p/a9ab265f82623f4d3160067209838db3/adjuntos/150/imagenes/040/316/0040316716/610x0/smart/argentina-mexico.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
